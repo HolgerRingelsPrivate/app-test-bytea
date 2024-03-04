@@ -1,0 +1,51 @@
+{
+  "id": 4,
+  "tableName": "AppXceptionRelevance",	
+  "codeTableItems": [
+
+    {
+      "code": "SYSTEM",
+      "language": "en",
+      "value": "System relevant",
+      "enabled": true,
+      "java_identifier": "SYSTEM",
+      "hint" : "Display: Sanity Check"
+    },
+    {
+      "code": "SYSTEM",
+      "language": "de",
+      "value": "System relevant",
+      "hint" : "Anzeige:  Systemcheck"
+    },
+    {
+      "code": "PROCESS",
+      "language": "en",
+      "value": "Process relevant",
+      "enabled": true,
+      "java_identifier": "PROCESS",
+      "hint" : "Display: Processing"
+    },
+    {
+      "code": "PROCESS",
+      "language": "de",
+      "value": "Prozess relevant",
+      "hint" : "Anzeige: Prozessablauf"
+    },
+    {
+      "code": "BACKGROUND",
+      "language": "en",
+      "value": "Background relevant",
+      "enabled": true,
+      "java_identifier": "BACKGROUND",
+      "hint" : "Display: Others"
+    },
+    {
+      "code": "BACKGROUND",
+      "language": "de",
+      "value": "Hintergrund relevant",
+      "hint" : "Display: Sonstige"
+    }
+
+
+  ]
+}

@@ -1,0 +1,129 @@
+{
+  "swagger": "2.0",
+
+	"paths": {
+	
+		"/Common/config": {
+
+			"get": {
+		        "operationId": "commonConfig",
+        		"summary": "Deliver Info about App's Common",
+        		"tags" : ["Config"],
+        		"produces": [
+       			   "application/json"
+        		],
+       			 "consumes": [
+          			"application/json"
+        		],
+        		
+        		 "responses": {
+			          "200": {
+           				 "description": "Info about App's Common has been delivered"
+          		 		  },
+          		 	  "500": {
+	           				 "description": "Internal Server Error"
+          		 		  }        
+               	}        		
+			}
+
+			
+			
+		},
+		"/Common/data/export": {
+
+			"post": {
+		        "operationId": "data_export",
+        		"summary": "Exports all Entity's Data (syncron)",
+        		"tags" : ["Entity Data"],
+        		"produces": [
+       			   "application/json"
+        		],
+       			 "consumes": [
+          			"application/json"
+        		],
+        		
+        		"parameters": [
+        				{
+				            "name": "appHeaderMetaData",
+				            "in": "header",
+				            "description": "Meta Data",
+				            "required": false,
+				            "type": "string"
+				        },
+				        {
+				            "name": "appHeaderProcessId",
+				            "in": "header",
+				            "description": "Process ID",
+				            "required": false,
+				            "type": "string"
+				        }
+        		],
+        		
+        		 "responses": {
+			          "200": {
+           				 "description": "All Data has been exported"
+          		 		  },
+          		 	  "500": {
+	           				 "description": "Internal Server Error"
+          		 		  }        
+               	}        		
+			}
+
+			
+		},
+		"/Common/data/import": {
+
+			"post": {
+		        "operationId": "data_import",
+        		"summary": "Imports all Entity's Data (syncron)",
+        		"tags" : ["Entity Data"],
+        		"produces": [
+       			   "application/json"
+        		],
+       			 "consumes": [
+          			"application/json"
+        		],
+        		
+        		"parameters": [
+        				{
+				            "name": "appHeaderMetaData",
+				            "in": "header",
+				            "description": "Meta Data",
+				            "required": false,
+				            "type": "string"
+				        },
+				        {
+				            "name": "appHeaderProcessId",
+				            "in": "header",
+				            "description": "Process ID",
+				            "required": false,
+				            "type": "string"
+				        }
+        		],
+        		
+        		 "responses": {
+			          "200": {
+           				 "description": "All Data has been imported"
+          		 		  },
+          		 	  "500": {
+	           				 "description": "Internal Server Error"
+          		 		  }        
+               	}        		
+			}
+
+			
+			
+		}			
+					
+					
+
+		
+	 },
+
+	"consumes": [
+		"application/json"
+	]
+  
+  
+}
+

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>testb API</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://unpkg.com/swagger-ui-dist@3/swagger-ui.css"
+    />
+  </head>
+  <body>
+  	<small><a href="/index.html" title="back">Back</a></small><br/>
+  	&nbsp;&nbsp;&nbsp;<img src="/images/AppIcon.png" alt="Icon" style="width:225px;height:75px;">
+	<br/>
+    <div id="swagger-ui"></div>
+    <script src="https://unpkg.com/swagger-ui-dist@3/swagger-ui-bundle.js"></script>
+    <script>
+      window.onload = function() {
+        // Begin Swagger UI call region
+        const ui = SwaggerUIBundle({
+          url: "/rest-api/Entity_testb.json", 
+          dom_id: "#swagger-ui",
+          presets: [SwaggerUIBundle.presets.apis],
+          plugins: [SwaggerUIBundle.plugins.DownloadUrl],
+        });
+        // End Swagger UI call region
+
+        window.ui = ui;
+      };
+    </script>
+  </body>
+</html>

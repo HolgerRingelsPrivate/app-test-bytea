@@ -1,0 +1,12 @@
+{
+  "schematas": [
+    {
+      "schemata": "appsys",
+      "version": "1.0.0"
+    },
+    {
+      "schemata": "mediadb",
+      "version": "1.0.0"
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+    {
+      "entityName": "testb",
+      "category1": "mediadb",
+      "version": "1.0.0",
+      
+      "labels": [
+		
+		{
+    	  "code": "$NV",
+      	  "language": "en",
+          "value": "Test ByteA"
+    	},
+    	
+ 
+		{
+    	  "code": "$F1",
+      	  "language": "en",
+          "value": "Test ByteA"
+    	},
+	    {
+    	  "code": "$F1_field",
+      	  "language": "en",
+          "value": "Field"
+    	},
+	    {
+    	  "code": "$F1_field2",
+      	  "language": "en",
+          "value": "Field 2"
+    	},
+	    {
+    	  "code": "$F1_field3",
+      	  "language": "en",
+          "value": "Field 3"
+    	},
+    	
+    	
+    	
+    	
+	    {
+    	  "code": "$L1",
+      	  "language": "en",
+          "value": "Test ByteA"
+    	},
+	    {
+    	  "code": "$L1_field",
+      	  "language": "en",
+          "value": "Field"
+    	},
+	    {
+    	  "code": "$L1_field2",
+      	  "language": "en",
+          "value": "Field 2"
+    	}
+    	,
+	    {
+    	  "code": "$L1_field3",
+      	  "language": "en",
+          "value": "Field 3"
+    	}		
+    	
+       ]
+    }

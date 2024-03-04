@@ -1,0 +1,47 @@
+{
+  "id": 5,
+  "tableName": "SoftDeletion",	
+  "codeTableItems": [
+
+    {
+      "code": "y",
+      "language": "en",
+      "value": "deleted",
+      "enabled": true,
+      "java_identifier": "DELETED"
+    },
+    {
+      "code": "y",
+      "language": "de",
+      "value": "gelöscht"
+    },
+    {
+      "code": "n",
+      "language": "en",
+      "value": "not deleted",
+      "enabled": true,
+      "java_identifier": "NOT_DELETED"
+    },
+    {
+      "code": "n",
+      "language": "de",
+      "value": "nicht gelöscht"
+    },
+    {
+      "code": "yn",
+      "language": "en",
+      "value": "deleted and not deleted",
+      "enabled": true,
+      "java_identifier": "DELETED_AND_NOT_DELETED"
+    },
+    {
+      "code": "yn",
+      "language": "de",
+      "value": "gelöscht und nicht gelöscht"
+    }
+
+
+
+
+  ]
+}

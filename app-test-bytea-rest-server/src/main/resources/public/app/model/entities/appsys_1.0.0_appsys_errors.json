@@ -1,0 +1,133 @@
+    {
+      "entityName": "appsys_errors",
+      "description": "*RESERVED* This table holds AppXceptions (raised by Errors and Exceptions)",
+      "category1": "appsys",
+      "version": "1.0.0",
+      
+      "entityAttributes": [
+        {
+          "field": "metadata",
+          "dataTypeID": 1,
+          "mandatory": true,
+          "cardinality": "1",
+          "stringConstrainMinLength": 1,
+          "stringConstrainMaxLength": -1
+        },
+        {
+          "field": "processid",
+          "dataTypeID": 1,
+          "mandatory": true,
+          "cardinality": "1",
+          "stringConstrainMinLength": 1,
+          "stringConstrainMaxLength": -1
+        },
+        {
+          "field": "affectedFile",
+          "dataTypeID": 1,
+          "mandatory": true,
+          "cardinality": "1",
+          "stringConstrainMinLength": 1,
+          "stringConstrainMaxLength": -1
+        },
+        {
+          "field": "errorText",
+          "dataTypeID": 1,
+          "mandatory": true,
+          "cardinality": "1",
+          "stringConstrainMinLength": 1,
+          "stringConstrainMaxLength": -1
+        },
+        {
+          "field": "errorCode",
+          "dataTypeID": 1,
+          "mandatory": true,
+          "cardinality": "1",
+          "stringConstrainMinLength": 1,
+          "stringConstrainMaxLength": -1
+        },
+        {
+          "field": "dtls",
+          "dataTypeID": 1,
+          "mandatory": true,
+          "cardinality": "1",
+          "stringConstrainMinLength": 1,
+          "stringConstrainMaxLength": -1
+        },
+        {
+          "field": "clazz",
+          "dataTypeID": 1,
+          "mandatory": true,
+          "cardinality": "1",
+          "stringConstrainMinLength": 1,
+          "stringConstrainMaxLength": -1
+        },
+        {
+          "field": "method",
+          "dataTypeID": 1,
+          "mandatory": true,
+          "cardinality": "1",
+          "stringConstrainMinLength": 1,
+          "stringConstrainMaxLength": -1
+        },
+	    {
+	      "field": "dTimeStamp",
+	      "dataTypeID": 3,
+	      "mandatory": false,
+	      "cardinality": "1"
+	    },
+        {
+          "field": "timeStamp",
+          "dataTypeID": 1,
+          "mandatory": true,
+          "cardinality": "1",
+          "stringConstrainMinLength": 1,
+          "stringConstrainMaxLength": -1
+        },
+        {
+          "field": "critical",
+          "dataTypeID": 4,
+          "mandatory": true,
+          "cardinality": "1"
+        },
+        {
+          "field": "logFile",
+          "dataTypeID": 1,
+          "mandatory": true,
+          "cardinality": "1",
+          "stringConstrainMinLength": 1,
+          "stringConstrainMaxLength": -1
+        },
+        {
+          "field": "urlToLogFile",
+          "dataTypeID": 1,
+          "mandatory": true,
+          "cardinality": "1",
+          "stringConstrainMinLength": 1,
+          "stringConstrainMaxLength": -1
+        },
+        {
+          "field": "logLevel",
+          "dataTypeID": 2,
+          "mandatory": true,
+          "cardinality": "1",
+          "codeConstrainCodeTableID": 3
+        },
+        {
+          "field": "relevance",
+          "dataTypeID": 2,
+          "mandatory": true,
+          "cardinality": "1",
+          "codeConstrainCodeTableID": 4
+        },
+        {
+          "field": "rootCauseException",
+          "dataTypeID": 1,
+          "mandatory": true,
+          "cardinality": "1",
+          "stringConstrainMinLength": 1,
+          "stringConstrainMaxLength": -1
+        }
+        
+         
+       ]
+    }

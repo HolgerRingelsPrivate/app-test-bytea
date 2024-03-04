@@ -1,0 +1,72 @@
+{
+  "dataTypes": [
+    {
+      "id": 1,
+      "dataType": "string"
+    },
+    {
+      "id": 2,
+      "dataType": "code"
+    },
+    {
+      "id": 3,
+      "dataType": "number"
+    },
+    {
+      "id": 4,
+      "dataType": "boolean"
+    },
+    {
+      "id": 5,
+      "dataType": "date"
+    },
+    {
+      "id": 6,
+      "dataType": "gYearMonth"
+    },
+    {
+      "id": 7,
+      "dataType": "gYear "
+    },
+    {
+      "id": 8,
+      "dataType": "gMonthDay"
+    },
+    {
+      "id": 9,
+      "dataType": "gMonth "
+    },
+    {
+      "id": 10,
+      "dataType": "gDay"
+    },
+    {
+      "id": 11,
+      "dataType": "time"
+    },
+    {
+      "id": 12,
+      "dataType": "dateTime"
+    },
+    {
+      "id": 13,
+      "dataType": "foreignKey"
+    },
+    {
+      "id": 14,
+      "dataType": "tag"
+    },
+    {
+      "id": 15,
+      "dataType": "attachment"
+    },
+    {
+      "id": 16,
+      "dataType": "rte"
+    },
+    {
+      "id": 17,
+      "dataType": "blobtext"
+    }
+  ]
+}

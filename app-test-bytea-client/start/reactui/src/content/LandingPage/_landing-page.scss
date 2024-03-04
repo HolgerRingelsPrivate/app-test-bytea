@@ -1,0 +1,251 @@
+@use "@carbon/colors";
+@use "@carbon/type";
+@use "@carbon/layout";
+@use '@carbon/themes/scss/themes' as *;
+@use '@carbon/themes' with ($theme: $g90);
+
+@import 'carbon-components/scss/globals/scss/vendor/@carbon/type/scss/font-family.scss';
+@import 'carbon-components/scss/globals/scss/vendor/@carbon/layout/scss/breakpoint.scss';
+@import 'carbon-components/scss/globals/scss/typography.scss';
+@import 'carbon-components/scss/globals/scss/vars.scss';
+
+// LOGIN_FORM
+.background-img { 
+    background: url(../../../public/app_images/app-login-background.jpg); 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+  }
+
+.fullscreen {
+    width: 100%;
+    min-height: 100vh;
+  }
+
+
+.selector {
+  margin-bottom: layout.$spacing-05;
+  width: layout.rem(24px);
+  height: layout.rem(24px);
+}
+@import 'carbon-components/scss/globals/scss/styles.scss';
+
+// Include type reset
+@include type.reset();
+
+// Include default type styles, targets h1, h2, h3, etc
+@include type.default-type();
+
+// Include utility classes for type-related properties
+@include type.type-classes();
+
+.landing-page__r2 .bx--tabs--scrollable {
+    transform: translateZ(0);
+    justify-content: flex-start;
+  }
+  .landing-page__r2 .bx--tab-content {
+    padding: 4;
+  }
+
+  .landing-page__illo {
+    max-width: 100%;
+  }
+
+  .landing-page__banner {
+    padding-top: $spacing-05;
+    padding-bottom: $spacing-07 * 4;
+  } 
+
+  @mixin landing-page-background() {
+    background-color: $ui-01;
+    position: relative;
+    &::before {
+      content: '';
+      position: absolute;
+      left: -$spacing-06;
+      top: 0;
+      right: -$spacing-06;
+      bottom: 0;
+      background: $ui-01;
+      z-index: -1;
+    }
+  }
+
+
+  .landing-page__banner {
+    padding-top: $spacing-05;
+    padding-bottom: $spacing-07 * 4;
+    @include landing-page-background;
+  }
+
+  .landing-page__heading {
+    @include carbon--type-style('productive-heading-05');
+  }
+
+  .landing-page__r2 {
+    margin-top: rem(-40px);
+  }
+
+  .landing-page__tab-content {
+    padding-top: $layout-05;
+    padding-bottom: $layout-05;
+  }
+  .landing-page__subheading {
+    @include carbon--type-style('productive-heading-03');
+    @include carbon--font-weight('semibold');
+  }
+
+  .landing-page__r3 {
+  padding-top: $spacing-09;
+  padding-bottom: $spacing-09;
+  @include landing-page-background;
+}
+.landing-page__label {
+  @include carbon--type-style('heading-01');
+}
+
+
+
+/* ************************************************************************ */ 
+/*  Ux UI Styling                                            
+/* ************************************************************************ */ 
+
+.padding-08 {
+    padding-bottom: $spacing-03;
+}
+
+.padding-16 {
+  padding-bottom: $spacing-04;
+}
+
+.helper-nav-padding {
+  margin-top: 64px;
+}
+
+.width-100 {
+  max-width: 100% !important;
+}
+
+// BACKGROUND
+body {
+    background-color: #262626;
+}
+
+.bg-inverse {
+    background-color: #393939;
+}
+
+// PADDING ALL
+.padding-16 {
+    padding: $spacing-05; // 16px
+}
+
+// PADDING-TOP
+.padding-t-16 {
+    padding-top: $spacing-05; // 16px
+}
+
+.padding-t-96 {
+    padding-top: $spacing-12;   // 96px
+}
+
+// PADDING-LEFT
+.padding-l-16 {
+    padding-left: $spacing-05; // 16px
+}
+
+.padding-l-96 {
+    padding-left: $spacing-12; //96px
+}
+
+// MARGIN-BOTTOM
+.margin-b-8 {
+    margin-bottom: $spacing-03; // 8px
+    font-size: $spacing-03;     // 8px
+}
+
+.margin-b-16 {
+    margin-bottom: $spacing-05; // 16px
+}
+
+.margin-b-24 {
+    margin-bottom: $spacing-06; // 24px
+}
+
+.margin-b-32 {
+    margin-bottom: $spacing-07; // 32px
+}
+
+.margin-b-40 {
+    margin-bottom: $spacing-08; // 40px
+}
+
+.margin-b-64 {
+    margin-bottom: $spacing-10; // 64px;
+}
+
+// MARGIN-RIGHT
+.margin-r-16 {
+    margin-right: $spacing-05; // 16px
+}
+
+// MARGIN-TOP
+.margin-t-24 {
+    margin-top: $spacing-06; // 24px
+}
+
+.margin-t-96 {
+    margin-top: $spacing-12; // 96px
+}
+
+// BOX-LAYOUT
+.width-608 {
+    max-width: 608px;
+    min-width: 608px;
+}
+
+.tile-center {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-setup {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+// LOGIN PAGE
+.bx--content {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+
+.cds--btn {
+    max-width: 100% !important;
+}
+
+.login-position {
+    padding-left: $spacing-10; // 64px
+    padding-top: $spacing-11; // 80px
+}
+
+.full-width {
+    width: 100%;
+}
+
+// DRAG AND DROP ZONE
+.cds--file__drop-container {
+    max-width: 100% !important;
+    min-width: 100% !important;
+    justify-content: center;
+}
+
+.cds--file-browse-btn {
+    max-width: 100% !important;
+    min-width: 100% !important;
+}
+

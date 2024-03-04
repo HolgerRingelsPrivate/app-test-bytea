@@ -1,0 +1,82 @@
+{
+  "id": 3,
+  "tableName": "LogLevel",	
+  "codeTableItems": [
+
+    {
+      "code": "TRACE",
+      "language": "en",
+      "value": "Trace",
+      "enabled": true,
+      "java_identifier": "TRACE"
+    },
+    {
+      "code": "TRACE",
+      "language": "de",
+      "value": "Trace"
+    },
+    {
+      "code": "DEBUG",
+      "language": "en",
+      "value": "Debug",
+      "enabled": true,
+      "java_identifier": "DEBUG"
+    },
+    {
+      "code": "DEBUG",
+      "language": "de",
+      "value": "Debug"
+    },
+    {
+      "code": "INFO",
+      "language": "en",
+      "value": "Info",
+      "enabled": true,
+      "java_identifier": "INFO"
+    },
+    {
+      "code": "INFO",
+      "language": "de",
+      "value": "Info"
+    },
+    {
+      "code": "WARN",
+      "language": "en",
+      "value": "Warn",
+      "enabled": true,
+      "java_identifier": "WARN"
+    },
+    {
+      "code": "WARN",
+      "language": "de",
+      "value": "Warn"
+    },
+    {
+      "code": "ERROR",
+      "language": "en",
+      "value": "Error",
+      "enabled": true,
+      "java_identifier": "ERROR"
+    },
+    {
+      "code": "ERROR",
+      "language": "de",
+      "value": "Error"
+    },
+    {
+      "code": "FATAL",
+      "language": "en",
+      "value": "Fatal",
+      "enabled": true,
+      "java_identifier": "FATAL"
+    },
+    {
+      "code": "FATAL",
+      "language": "de",
+      "value": "Fatal"
+    }
+
+
+
+  ]
+}

@@ -1,0 +1,157 @@
+{
+  "id": 2,
+  "tableName": "ErrorCodes",	
+  "codeTableItems": [
+
+    {
+      "code": "00000",
+      "language": "en",
+      "value": "OK, No Error",
+      "enabled": true,
+      "java_identifier": "NO_ERROR"
+    },
+    {
+      "code": "00000",
+      "language": "de",
+      "value": "OK kein Fehler aufgetreten"
+    },
+    {
+      "code": "00001",
+      "language": "en",
+      "value": "No Error Details",
+      "enabled": true,
+      "java_identifier": "NO_ERROR_CODE"
+    },
+    {
+      "code": "00001",
+      "language": "de",
+      "value": "Keine Fehler Details"
+    },
+    {
+      "code": "00002",
+      "language": "en",
+      "value": "Directory does not exist",
+      "enabled": true,
+      "java_identifier": "DIRECTORY_NOT_AVAILABLE"
+    },
+    {
+      "code": "00002",
+      "language": "de",
+      "value": "Verzeichnis existiert nicht"
+    },
+    {
+      "code": "00003",
+      "language": "en",
+      "value": "Entry is not allowed to be an empty string",
+      "enabled": true,
+      "java_identifier": "UNALLOWED_EMPTY_STRING"
+    },
+    {
+      "code": "00003",
+      "language": "de",
+      "value": "Die Eingabe darf kein Leerstring sein"
+    },
+    {
+      "code": "00004",
+      "language": "en",
+      "value": "File Upload Folder not found",
+      "enabled": true,
+      "java_identifier": "FILE_UPLOAD_FOLFER_NOT_FOUND"
+    },
+    {
+      "code": "00004",
+      "language": "de",
+      "value": "Das Upload Verzeichnis ist nicht vorhanden"
+    },
+    {
+      "code": "00005",
+      "language": "en",
+      "value": "Unknown User",
+      "enabled": true,
+      "java_identifier": "USER_UNKNOWN"
+    },
+    {
+      "code": "00005",
+      "language": "de",
+      "value": "Benutzer unbekannt"
+    },
+    {
+      "code": "00006",
+      "language": "en",
+      "value": "File does not exist",
+      "enabled": true,
+      "java_identifier": "FILE_NOT_EXISTING"
+    },
+    {
+      "code": "00006",
+      "language": "de",
+      "value": "Datei ist nicht vorhanden"
+    },
+    {
+      "code": "00007",
+      "language": "en",
+      "value": "Module not reachible",
+      "enabled": true,
+      "java_identifier": "MODULE_NOT_REACHIBLE",
+      "hint" : "Please revisit page, after ALL Modules have been restarted"
+    },
+    {
+      "code": "00007",
+      "language": "de",
+      "value": "Module ist nicht erreichbar",
+      "hint" : "Bitte besuchen Sie diese Seite nach dem Neustart ALLER Module"
+    },
+    {
+      "code": "00008",
+      "language": "en",
+      "value": "SQL/Database Error",
+      "enabled": true,
+      "java_identifier": "SQL_DATABASE_ERROR",
+      "hint" : "Please revisit page, after ALL Modules have been restarted"
+    },
+    {
+      "code": "00008",
+      "language": "de",
+      "value": "SQL/Datenbank-Fehler",
+      "hint" : "Bitte besuchen Sie diese Seite nach dem Neustart ALLER Module"
+    },
+    {
+      "code": "00009",
+      "language": "en",
+      "value": "Entity does not exist (Unknown ID)",
+      "enabled": true,
+      "java_identifier": "SQL_ENTITY_UNKNOWN"
+    },
+    {
+      "code": "00009",
+      "language": "de",
+      "value": "Das Objekt existiert nicht (Unbekannte ID)"
+    },
+    {
+      "code": "00010",
+      "language": "en",
+      "value": "File Handling does not work properly",
+      "enabled": true,
+      "java_identifier": "FILE_HANDLING_ISSUE"
+    },
+    {
+      "code": "00010",
+      "language": "de",
+      "value": "Datei Modifikation arbeitet nicht korrekt"
+    },
+    {
+      "code": "00011",
+      "language": "en",
+      "value": "Data Import not possible (database is not empty)",
+      "enabled": true,
+      "java_identifier": "DATABASE_IMPORT_BLOCKED_BY_EXISTING_DATA"
+    },
+    {
+      "code": "00011",
+      "language": "de",
+      "value": "Daten Import nicht möglich (Datenbank ist nicht leer)"
+    }
+    
+    
+  ]
+}

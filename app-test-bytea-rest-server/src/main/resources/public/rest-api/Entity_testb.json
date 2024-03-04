@@ -1,0 +1,320 @@
+{
+  "swagger": "2.0",
+
+	"paths": {
+	
+		"/testb": {
+
+			"post": {
+		        "operationId": "testb_create",
+        		"summary": "CREATE a testb",
+        		"tags" : ["testb"],
+        		"produces": [
+       			   "application/json"
+        		],
+       			 "consumes": [
+          			"application/json"
+        		],
+        		
+        		"parameters": [
+        				{
+				            "name": "appHeaderMetaData",
+				            "in": "header",
+				            "description": "Meta Data",
+				            "required": false,
+				            "type": "string"
+				        },
+				        {
+				            "name": "appHeaderProcessId",
+				            "in": "header",
+				            "description": "Process ID",
+				            "required": false,
+				            "type": "string"
+				        },
+				        {
+				            "name": "parameter",
+				            "in": "body",
+				            "description": "Provide testb as JSON",	
+							"required": true,
+				            "schema": {
+              					         "$ref": "#/definitions/testb"
+            						  }				       
+                        }
+				        
+        		
+        		],
+        		
+        		 "responses": {
+			          "200": {
+           				 "description": "Info about testb has been delivered"
+          		 		  },
+          		 	  "500": {
+	           				 "description": "Internal Server Error"
+          		 		  }        
+               	}        		
+			},
+
+
+			"get": {
+		        "operationId": "testb_list",
+        		"summary": "Deliver LIST of testb",
+        		"tags" : ["testb"],
+        		"produces": [
+       			   "application/json"
+        		],
+       			 "consumes": [
+          			"application/json"
+        		],
+        		
+        		"parameters": [
+        				{
+				            "name": "appHeaderMetaData",
+				            "in": "header",
+				            "description": "Meta Data",
+				            "required": false,
+				            "type": "string"
+				        },
+				        {
+				            "name": "appHeaderProcessId",
+				            "in": "header",
+				            "description": "Process ID",
+				            "required": false,
+				            "type": "string"
+				        },
+				        {
+				            "name": "appHeaderInclSoftDeleted",
+				            "in": "header",
+				            "description": "Soft Deleted select 'y' = soft deleted, 'yn' = do not care, 'n' or no input = 'not soft deleted' ",
+				            "required": false,
+				            "type": "string"
+				        }
+				        
+        		
+        		],
+        		
+        		 "responses": {
+			          "200": {
+           				 "description": "List of testb has been delivered"
+          		 		  },
+          		 	  "500": {
+	           				 "description": "Internal Server Error"
+          		 		  }        
+               	}        		
+			}
+
+			
+			
+		},
+		"/testb/{id}": {
+
+			"get": {
+		        "operationId": "testb_read",
+        		"summary": "READ a testb",
+        		"tags" : ["testb"],
+        		"produces": [
+       			   "application/json"
+        		],
+       			 "consumes": [
+          			"application/json"
+        		],
+        		
+        		"parameters": [
+        				{
+				            "name": "appHeaderMetaData",
+				            "in": "header",
+				            "description": "Meta Data",
+				            "required": false,
+				            "type": "string"
+				        },
+				        {
+				            "name": "appHeaderProcessId",
+				            "in": "header",
+				            "description": "Process ID",
+				            "required": false,
+				            "type": "string"
+				        },
+				        {
+				            "name": "id",
+				            "in": "path",
+				            "description": "testb ID",
+				            "required": true,
+				            "type": "string"
+				        }
+				        
+        		
+        		],
+        		
+        		 "responses": {
+			          "200": {
+           				 "description": "Entity testb has been delivered"
+          		 		  },
+          		 	  "500": {
+	           				 "description": "Internal Server Error"
+          		 		  }        
+               	}        		
+			},
+				"put": {
+		        "operationId": "testb_update",
+        		"summary": "UPDATE a testb",
+        		"tags" : ["testb"],
+        		"produces": [
+       			   "application/json"
+        		],
+       			 "consumes": [
+          			"application/json"
+        		],
+        		
+        		"parameters": [
+
+        				{
+				            "name": "appHeaderMetaData",
+				            "in": "header",
+				            "description": "Meta Data",
+				            "required": false,
+				            "type": "string"
+				        },
+				        {
+				            "name": "appHeaderProcessId",
+				            "in": "header",
+				            "description": "Process ID",
+				            "required": false,
+				            "type": "string"
+				        },
+        				{
+				            "name": "id",
+				            "in": "path",
+				            "description": "testb ID",
+				            "required": true,
+				            "type": "string"
+				        },
+				        {
+				            "name": "parameter",
+				            "in": "body",
+				            "description": "Provide testb as JSON",	
+							"required": true,
+				            "schema": {
+              					         "$ref": "#/definitions/testb"
+            						  }				       
+                        }
+
+				        
+        		
+        		],
+        		
+        		"responses": {
+			          "200": {
+           				 "description": "testb has been updated"
+          		 		  },
+          		 	  "500": {
+	           				 "description": "Internal Server Error"
+          		 		  }        
+               	}        		
+			},
+			
+			"delete": {
+		        "operationId": "testb_delete",
+        		"summary": "DELETE testb",
+        		"tags" : ["testb"],
+        		"produces": [
+       			   "application/json"
+        		],
+       			 "consumes": [
+          			"application/json"
+        		],
+        		
+        		"parameters": [
+					
+        				{
+				            "name": "appHeaderMetaData",
+				            "in": "header",
+				            "description": "Meta Data",
+				            "required": false,
+				            "type": "string"
+				        },
+				        {
+				            "name": "appHeaderProcessId",
+				            "in": "header",
+				            "description": "Process ID",
+				            "required": false,
+				            "type": "string"
+				        },
+        				{
+				            "name": "id",
+				            "in": "path",
+				            "description": "testb ID (enter '*' to delete all)",
+				            "required": false,
+				            "type": "string"
+				        }        		
+        		],
+        		
+        		"responses": {
+			          "200": {
+           				 "description": "testb or all of them deleted"
+          		 		  },
+          		 	  "500": {
+	           				 "description": "Internal Server Error"
+          		 		  }        
+               	}        		
+			}			
+
+			
+
+
+			
+			
+		}
+					
+
+		
+	 },
+
+	 "definitions": 
+     	{ 
+
+
+		   "testb" : {
+				"type": "object",
+				"properties": {
+					"field" : 
+					{
+                        "type": "string",
+				        "example": "?"
+                  	},
+
+					"field2" : 
+					{
+                        "type": "string",
+				        "example": "?"
+                  	},
+
+					"field3" : 
+					{
+                        "type": "string",
+				        "example": "?"
+                  	},
+
+                    "_softdeleted" :
+					{
+                        "type": "string",
+				        "example": "n"
+                  	},
+                  	"_lastmodified" :
+					{
+                        "type": "number",
+				        "example": 0
+                  	}
+                  	
+				}
+			}
+
+
+
+ 
+		},
+
+	"consumes": [
+		"application/json"
+	]
+  
+  
+}

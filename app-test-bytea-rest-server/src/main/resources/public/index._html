@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Application API</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://unpkg.com/swagger-ui-dist@3/swagger-ui.css"
+    />
+  </head>
+  <body>
+	&nbsp;&nbsp;&nbsp;<img src="/images/AppIcon.png" alt="AppIcon" style="width:225px;height:75px;">
+	<br/>
+    <div id="swagger-ui"></div>
+    <script src="https://unpkg.com/swagger-ui-dist@3/swagger-ui-bundle.js"></script>
+    <script>
+      window.onload = function() {
+        // Begin Swagger UI call region
+        const ui = SwaggerUIBundle({
+          url: "/api.json?1709128272884", 
+          dom_id: "#swagger-ui",
+          presets: [SwaggerUIBundle.presets.apis],
+          plugins: [SwaggerUIBundle.plugins.DownloadUrl],
+        });
+        // End Swagger UI call region
+
+        window.ui = ui;
+      };
+    </script>
+        <br/>
+    <hr/>
+    <br/>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="/doc/html/DataModel/index.html" title="DataModel">DataModel</a><br/>
+    <br/>
+    <hr/>
+    <br/>
+<table>
+	<tr>
+		<td>
+		    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Entity : testb</a><br/>
+		</td>
+		<td>
+		    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="/rest-api/Entity_testb.html" title="testb CRUDL">CRUDL</a><br/>
+		</td>
+		<td>
+		    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="/rest-api-addon/Entity_testb_addon.html" title="testb AddOn">Add On</a><br/>
+		</td>
+    </tr>
+<table>
+  </body>
+</html>

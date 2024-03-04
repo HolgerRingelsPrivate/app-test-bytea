@@ -1,0 +1,34 @@
+{
+  "id": 1,
+  "tableName": "Language",	
+  "codeTableItems": [
+    {
+      "code": "de",
+      "language": "en",
+      "value": "German",
+      "enabled": true,
+      "java_identifier": "DE",
+      "description" : "i18n for all other codetables (see also ISO 639-1)"
+    },
+    {
+      "code": "de",
+      "language": "de",
+      "value": "Deutsch"
+    },
+    {
+      "code": "en",
+      "language": "en",
+      "value": "English",
+      "enabled": true,
+      "java_identifier": "EN",
+      "description" : "i18n for all other codetables (see also ISO 639-1)",
+      "isdefault" : "true"
+    },
+        {
+      "code": "en",
+      "language": "de",
+      "value": "Englisch"
+    }
+
+  ]
+}

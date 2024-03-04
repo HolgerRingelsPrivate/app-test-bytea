@@ -1,0 +1,161 @@
+{
+  "swagger": "2.0",
+
+	"paths": {
+	
+		"/testb/addon/something": {
+
+			"put": {
+		        "operationId": "testb_create",
+        		"summary": "CREATE a testb",
+        		"tags" : ["testb"],
+        		"produces": [
+       			   "application/json"
+        		],
+       			 "consumes": [
+          			"application/json"
+        		],
+        		
+        		 "responses": {
+			          "200": {
+           				 "description": "Info about testb has been delivered"
+          		 		  },
+          		 	  "500": {
+	           				 "description": "Internal Server Error"
+          		 		  }        
+               	}        		
+			}
+
+			
+		},
+		
+		
+		
+		
+		"/testb/addon/one/fieldmirror": {
+
+			"put": {
+		        "operationId": "testb_addon_one_fieldmirror",
+        		"summary": "File => Field (bytea) => Mirrored File => Compare",
+        		"tags" : ["Mirror"],
+        		"produces": [
+       			   "application/json"
+        		],
+       			 "consumes": [
+          			"application/json"
+        		],
+        		
+        		 "responses": {
+			          "200": {
+           				 "description": "Info about testb has been delivered"
+          		 		  },
+          		 	  "500": {
+	           				 "description": "Internal Server Error"
+          		 		  }        
+               	}        		
+			}			
+			
+		},
+		
+		"/testb/addon/one/field": {
+
+			"post": {
+		        "operationId": "testb_addon_one_field_post",
+        		"summary": "Field (bytea) => Create",
+        		"tags" : ["Field"],
+        		"produces": [
+       			   "application/json"
+        		],
+       			 "consumes": [
+          			"application/json"
+        		],
+        		
+        		 "responses": {
+			          "200": {
+           				 "description": "Info about testb has been delivered"
+          		 		  },
+          		 	  "500": {
+	           				 "description": "Internal Server Error"
+          		 		  }        
+               	}        		
+			},
+			
+			"get": {
+		        "operationId": "testb_addon_one_field_search",
+        		"summary": "Field (bytea) => Search",
+        		"tags" : ["Field"],
+        		"produces": [
+       			   "application/json"
+        		],
+       			 "consumes": [
+          			"application/json"
+        		],
+        		
+        		 "responses": {
+			          "200": {
+           				 "description": "Info about testb has been delivered"
+          		 		  },
+          		 	  "500": {
+	           				 "description": "Internal Server Error"
+          		 		  }        
+               	}        		
+			}
+			
+			
+						
+			
+		}		
+		
+		
+	 },
+
+	 "definitions": 
+     	{ 
+
+
+		   "testb" : {
+				"type": "object",
+				"properties": {
+					"field" : 
+					{
+                        "type": "string",
+				        "example": "?"
+                  	},
+
+					"field2" : 
+					{
+                        "type": "string",
+				        "example": "?"
+                  	},
+
+					"field3" : 
+					{
+                        "type": "string",
+				        "example": "?"
+                  	},
+
+                    "_softdeleted" :
+					{
+                        "type": "string",
+				        "example": "n"
+                  	},
+                  	"_lastmodified" :
+					{
+                        "type": "number",
+				        "example": 0
+                  	}
+                  	
+				}
+			}
+
+
+
+ 
+		},
+
+	"consumes": [
+		"application/json"
+	]
+  
+  
+}

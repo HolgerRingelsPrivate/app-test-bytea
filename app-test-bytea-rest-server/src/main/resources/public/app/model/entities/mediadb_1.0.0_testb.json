@@ -1,0 +1,33 @@
+    {
+      "entityName": "testb",
+      "description": "One fields as blob text",
+      "category1": "mediadb",
+      "version": "1.0.0",
+      
+      "entityAttributes": [
+        {
+          "field": "field",
+          "dataTypeID": 17,
+          "mandatory": true,
+          "cardinality": "1",
+          "stringConstrainMinLength": 1,
+          "stringConstrainMaxLength": -1
+        },
+        {
+          "field": "field2",
+          "dataTypeID": 1,
+          "mandatory": true,
+          "cardinality": "1",
+          "stringConstrainMinLength": 1,
+          "stringConstrainMaxLength": -1
+        },
+        {
+          "field": "field3",
+          "dataTypeID": 1,
+          "mandatory": true,
+          "cardinality": "1",
+          "stringConstrainMinLength": 1,
+          "stringConstrainMaxLength": -1
+        }
+       ]
+    }

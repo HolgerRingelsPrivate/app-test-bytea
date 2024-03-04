@@ -1,0 +1,52 @@
+@use '@carbon/react';
+@use '@carbon/type';
+@use '@carbon/layout';
+// If you're including all the styles for Carbon
+@use '@carbon/styles';
+
+// Or if you're wanting to use just the grid
+@use '@carbon/styles/scss/grid';
+
+// Emit the flex-grid styles
+@include grid.flex-grid();
+
+.selector {
+  margin-bottom: layout.$spacing-05;
+  width: layout.rem(24px);
+  height: layout.rem(24px);
+}
+@import 'carbon-components/scss/globals/scss/styles.scss';
+
+// Include type reset
+@include type.reset();
+
+// Include default type styles, targets h1, h2, h3, etc
+@include type.default-type();
+
+// Include utility classes for type-related properties
+@include type.type-classes();
+
+.cds--content {
+  margin-top: 3rem;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #000000;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+$feature-flags: (
+  grid-columns-16: true,
+);
+
+

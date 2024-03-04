@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="warn">
+
+    <Appenders>
+        <!-- Console Appender -->
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="[%-5p] [%d{ISO8601}] [%t] [%c] - %msg%n" />
+        </Console>
+    
+            <!-- Rolling File Appender -->
+        <RollingFile name="RollingFile" fileName="logs/app.log"
+                     filePattern="logs/app-%d{yyyy-MM-dd}-%i.log.gz">
+            <PatternLayout>
+                <Pattern>[%-5p] [%d{ISO8601}] [%t] [%c] - %msg%n</Pattern>
+            </PatternLayout>
+            <Policies>
+                <!-- Rollover based on time (daily) -->
+                <TimeBasedTriggeringPolicy />
+                <!-- Rollover based on file size (10 MB) -->
+                <SizeBasedTriggeringPolicy size="10 MB" />
+            </Policies>
+        </RollingFile>
+        
+    
+    </Appenders>
+    
+    
+    <Loggers>
+        <!-- Console logger -->
+        <Root level="info">
+            <AppenderRef ref="Console" />
+            <AppenderRef ref="RollingFile" />
+        </Root>
+        
+        
+    </Loggers>
+</Configuration>
